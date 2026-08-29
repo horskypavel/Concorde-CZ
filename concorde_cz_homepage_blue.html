@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CONCORDE Česká republika | Luxusní obytné vozy</title>
+<meta name="description" content="Concorde Reisemobile – luxusní obytné vozy v České republice. Objevte modelové řady Credo, Carver, Charisma, Liner a Centurion.">
+<style>
+:root{
+  --bg:#0b0b0b;--panel:#151515;--text:#f5f3ef;--muted:#aaa59d;
+  --line:#2b2a28;--accent:#c9a56a;--max:1440px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 42px}
+header{position:absolute;z-index:5;top:0;left:0;right:0;background:rgba(16,38,63,.94);border-bottom:1px solid rgba(255,255,255,.18)}
+.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{font-size:25px;letter-spacing:5px;font-weight:700;color:#fff}
+.logo span{display:block;font-size:9px;letter-spacing:3px;color:#d9e3ee;margin-top:5px}
+nav{display:flex;gap:28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.nav-cta{border:1px solid rgba(255,255,255,.65);padding:13px 18px;font-size:11px;letter-spacing:1.3px;color:#fff}
+.hero{min-height:780px;display:flex;align-items:flex-end;position:relative;overflow:hidden;
+background:
+linear-gradient(90deg,rgba(16,38,63,.88),rgba(16,38,63,.28) 62%,rgba(16,38,63,.62)),
+linear-gradient(180deg,rgba(16,38,63,.12),#10263f 96%),
+radial-gradient(circle at 72% 42%,#9da8b3 0,#5c6c7d 35%,#233a52 70%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0 38%,rgba(201,165,106,.08) 50%,transparent 62%);pointer-events:none}
+.hero-content{position:relative;z-index:2;padding:0 0 100px;max-width:760px}
+.kicker{font-size:11px;letter-spacing:4px;color:#dce6ef;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(48px,7vw,100px);line-height:.92;margin:0 0 28px;font-weight:500;letter-spacing:-3px}
+.hero p{font-size:18px;line-height:1.6;color:#e1e8ef;max-width:620px}
+.buttons{display:flex;gap:12px;margin-top:35px;flex-wrap:wrap}
+.btn{padding:16px 24px;border:1px solid rgba(255,255,255,.72);font-size:11px;letter-spacing:1.8px;text-transform:uppercase}
+.btn.gold{background:#fff;border-color:#fff;color:#10263f}
+section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}
+.eyebrow{color:#173b61;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:13px}
+h2{font-size:48px;font-weight:400;letter-spacing:-1.5px;margin:0}.intro{max-width:530px;color:var(--muted);line-height:1.7}
+.models{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.card{min-height:490px;background:#dfe6ed;position:relative;overflow:hidden;display:flex;align-items:flex-end;border:1px solid #cbd5df}
+.card:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#b9c6d1 0,#6f8090 42%,#263e57 100%);transition:.5s}
+.card:nth-child(2):before{background:linear-gradient(145deg,#c6d0da,#74879a 45%,#24415f)}
+.card:nth-child(3):before{background:linear-gradient(145deg,#aebcc8,#657789 45%,#203a55)}
+.card:nth-child(4):before{background:linear-gradient(145deg,#ccd5dd,#75899c 45%,#203b57)}
+.card:nth-child(5):before{background:linear-gradient(145deg,#b7c5d1,#687b8d 45%,#1d3853)}
+.card:hover:before{transform:scale(1.04)}
+.card-content{position:relative;z-index:2;padding:32px;width:100%;background:linear-gradient(transparent,rgba(12,32,51,.95));color:#fff}
+.card small{color:#d7e2ec;letter-spacing:2px;font-size:9px;text-transform:uppercase}
+.card h3{font-size:34px;font-weight:400;margin:9px 0}.card p{color:#d1dce6;margin:0 0 18px;font-size:13px}
+.link{font-size:10px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:6px}
+.manifesto{background:#eef2f6;color:#10263f}.manifesto .eyebrow{color:#173b61}.manifesto .intro{color:#586b7e}.manifesto-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:center}
+.manifesto h2{font-size:clamp(45px,6vw,78px);line-height:1}
+.feature-list{border-top:1px solid #cad4de}.feature{padding:24px 0;border-bottom:1px solid #cad4de;display:flex;justify-content:space-between;gap:20px}.feature b{font-size:15px;font-weight:500}.feature span{color:#68798a;font-size:13px;text-align:right}
+.config{background:#10263f}.config-box{min-height:500px;display:flex;align-items:flex-end;padding:55px;background:linear-gradient(120deg,#264a6d,#10263f);position:relative;overflow:hidden}
+.config-box:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:7%;top:-25%;background:radial-gradient(circle,#8299ad,#355572 55%,transparent 70%);opacity:.55}
+.config-content{position:relative;z-index:1;max-width:700px}.config h2{font-size:62px}.config p{color:#d4dfe9;line-height:1.7;max-width:600px}
+.contact{background:#f7f8fa}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-box{border-top:1px solid var(--line);padding-top:25px}.contact-box h3{font-size:24px;font-weight:400;margin:0 0 15px}.contact-box p{color:#657487;line-height:1.7}
+footer{border-top:1px solid #2a4864;background:#10263f;padding:35px 0;color:#d0dbe5;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+@media(max-width:900px){nav{display:none}.wrap{padding:0 22px}.hero{min-height:680px}.models{grid-template-columns:1fr 1fr}.manifesto-grid,.contact-grid{grid-template-columns:1fr;gap:45px}.section-head{display:block}.intro{margin-top:20px}}
+@media(max-width:600px){.models{grid-template-columns:1fr}.hero-content{padding-bottom:65px}.hero p{font-size:16px}h2{font-size:38px}.config-box{padding:32px}.config h2{font-size:43px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">CONCORDE<span>ČESKÁ REPUBLIKA · BLUE RENT</span></a>
+    <nav>
+      <a href="#modely">Modely</a>
+      <a href="#concorde">Concorde</a>
+      <a href="#konfigurator">Konfigurátor</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="#kontakt">Domluvte si schůzku</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="kicker">Concorde Reisemobile · Česká republika</div>
+      <h1>Luxus,<br>který cestuje.</h1>
+      <p>Objevte svět Concorde. Ruční zpracování, špičková technika a prostor vytvořený pro ty, kteří nechtějí při cestování dělat kompromisy.</p>
+      <div class="buttons">
+        <a class="btn gold" href="#modely">Prohlédnout modely</a>
+        <a class="btn" href="#konfigurator">Sestavit svůj Concorde</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modely">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Modelová řada</div><h2>Vyberte si svůj Concorde.</h2></div>
+      <p class="intro">Od kompaktní luxusní třídy až po vrchol nabídky. Každý Concorde vzniká s důrazem na komfort, kvalitu a dlouhou životnost.</p>
+    </div>
+    <div class="models">
+<article class="card"><div class="card-content"><small>Alkovna · do 7,49 t</small><h3>Cruiser Daily</h3><p>Univerzální luxusní alkovna na Iveco.</p><a class="link" href="#">Objevit Cruiser Daily →</a></div></article>
+<article class="card"><div class="card-content"><small>Alkovna · vyšší třída</small><h3>Cruiser Atego</h3><p>Výkon, prostor a zadní pohon Mercedes-Benz Atego.</p><a class="link" href="#">Objevit Cruiser Atego →</a></div></article>
+      <article class="card"><div class="card-content"><small>Compact Luxury</small><h3>Credo</h3><p>Kompaktní rozměry. Prémiový komfort.</p><a class="link" href="#">Objevit Credo →</a></div></article>
+      <article class="card"><div class="card-content"><small>Luxury</small><h3>Carver</h3><p>Lehkost, elegance a výrazný charakter.</p><a class="link" href="#">Objevit Carver →</a></div></article>
+      <article class="card"><div class="card-content"><small>Classic</small><h3>Charisma</h3><p>Klasika mezi luxusními obytnými vozy.</p><a class="link" href="#">Objevit Charisma →</a></div></article>
+      <article class="card"><div class="card-content"><small>Premium Luxury</small><h3>Liner</h3><p>Prostor a vybavení bez kompromisů.</p><a class="link" href="#">Objevit Liner →</a></div></article>
+      <article class="card"><div class="card-content"><small>Flagship</small><h3>Centurion Actros</h3><p>Vlajková loď Concorde bez kompromisů.</p><a class="link" href="#">Objevit Centurion →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="concorde" class="manifesto">
+  <div class="wrap manifesto-grid">
+    <div>
+      <div class="eyebrow">Více než obytný vůz</div>
+      <h2>Vítejte ve světě Concorde.</h2>
+    </div>
+    <div>
+      <p class="intro">Concorde není jen způsob, jak cestovat. Je to vlastní prostor, vlastní tempo a vlastní standard. Každý detail je navržen tak, aby spojil německé řemeslo s komfortem, který očekáváte od skutečného luxusu.</p>
+      <div class="feature-list">
+        <div class="feature"><b>Prémiové zpracování</b><span>Detail, který poznáte na první pohled.</span></div>
+        <div class="feature"><b>Individuální konfigurace</b><span>Vůz přesně podle vašich představ.</span></div>
+        <div class="feature"><b>Technologie pro cestování</b><span>Komfort doma i na cestách.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="konfigurator" class="config">
+  <div class="wrap">
+    <div class="config-box">
+      <div class="config-content">
+        <div class="eyebrow">Concorde Customised</div>
+        <h2>Sestavte si svůj vysněný vůz.</h2>
+        <p>Vyberte model, půdorys, materiály, dekory a výbavu. Začněte online a konfiguraci společně dokončíme osobně.</p>
+        <a class="btn gold" href="#">Spustit konfigurátor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Concorde v České republice</div><h2>Přijďte se podívat.</h2></div>
+      <p class="intro">Prohlédněte si dostupné vozy, projděte si jednotlivé modely a proberte s námi konfiguraci vašeho nového Concorde.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-box"><h3>Prodej a individuální nabídky</h3><p>Osobní konzultace · konfigurace · skladové vozy<br><br><strong>+420 XXX XXX XXX</strong><br>concorde@concorde.cz</p></div>
+      <div class="contact-box"><h3>Showroom</h3><p>Praha / Česká republika<br><br>Termín návštěvy doporučujeme předem rezervovat.</p><a class="link" href="#">Naplánovat návštěvu →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="partner" style="background:#fff;border-top:1px solid #d9e0e8;">
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:35px;align-items:center;flex-wrap:wrap;">
+    <div>
+      <div class="eyebrow">Oficiální partner v České republice</div>
+      <h2 style="font-size:38px;margin:0;">Concorde &amp; Blue Rent</h2>
+      <p class="intro" style="margin-top:14px;">Prodej nových Concorde, individuální konfigurace, servis a kompletní péče o váš obytný vůz.</p>
+    </div>
+    <a class="btn" href="#" style="border-color:#173b61;color:#173b61;">Blue Rent →</a>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">© 2026 CONCORDE ČESKÁ REPUBLIKA · Blue Rent · Všechna práva vyhrazena</div></footer>
+</body>
+</html>
